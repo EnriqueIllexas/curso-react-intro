@@ -1,0 +1,13 @@
+.todo-list{
+    background-color: #161515;
+    margin: 40px 40px 4% 40px;
+    padding: 10px;
+    border-radius: 10px;
+    display: grid;
+    place-items: top;
+    place-self: center;
+    max-height: 40vh;
+    overflow:auto;
+    gap: 10px;
+    min-height: 40vh;
+}

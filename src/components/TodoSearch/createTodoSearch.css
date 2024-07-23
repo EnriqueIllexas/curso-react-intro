@@ -1,0 +1,59 @@
+.todo-seach-box {
+    height: 40px;
+    margin: 0px 40px;
+    display: flex;
+    justify-content:space-around;
+    background-color: #16151560;
+  
+    border-radius: 10px;
+    transition: 0.6s;
+  }
+  .todo-seach-box:hover{
+    box-shadow: rgb(7, 16, 25) 0px 20px 30px -10px;
+  }
+  .todo-seach-box:focus-within {
+    border: 1px solid transparent;
+  }
+  /* Search input element */
+  #todo-seach-input {
+    width: 80%;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+
+  }
+  #todo-seach-input:focus ~ #todo-seach--send-button svg path,
+  #todo-seach-input:valid ~ #todo-seach--send-button svg path {
+    fill: transparent;
+    stroke: var(--blue-2);
+  }
+
+  input{
+    padding-left: 5%;
+  }
+  #todo-seach--send-button {
+    width: fit-content;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  #todo-seach--send-button svg {
+    height: 18px;
+    transition: all 0.3s;
+    margin-left: 10px;
+  }
+  #todo-seach--send-button svg path {
+    transition: all 0.3s;
+  }
+  #todo-seach--send-button:hover svg path {
+    fill: transparent;
+    stroke: white;
+  }

@@ -1,0 +1,53 @@
+:root{
+  --blue-1: rgb(2, 156, 184);
+  --blue-2: #00C3DB;
+  --blue-medium: #029CB8;
+  --blue-dark-1: #135266;
+  --blue-dark-2:#063646;
+  --blue-dark-max: #03222c;
+  --fondo: #18181B;
+  --transition: 0.4s;
+}
+.LoadingTodo-container {
+  display: flex;
+  height:  auto;
+  padding: 8px;
+  text-align: center;
+  max-height: 80px;
+  justify-content:space-around;
+  align-items: center;
+  background-color: #135266;
+  border-radius: 10px;
+  width: 94%; 
+  max-width: 94%;
+  overflow: hidden;
+  list-style: none;
+  
+}
+.loading-element-v, .loading-element-x{
+  width: 20px;
+  height: 28px;
+  border-radius: 5px;
+}
+.loading-element-p{
+  padding: 12px 60px;
+  border-radius: 5px;
+}
+
+.LoadingTodo-container,.loading-element-v,.loading-element-x,.loading-element-p{
+  background: linear-gradient(90deg, #00c1db86, #135266,#063646);
+  background-size: 400% 400%;
+  animation: loadingAnimation 3s ease-in-out infinite;
+}
+
+@keyframes loadingAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

@@ -1,0 +1,17 @@
+.todo-create-button{
+    position: relative;
+    transition: 1.04s;
+    height: 4rem;
+    width: 4rem;
+    font-size: 2rem;
+    z-index: 9;
+    padding: 0 1rem 0.2rem;
+    margin-bottom: 0.8%;
+    border-radius: 50px;
+    background: #27272a;
+    border: none;
+    color: #fff;
+    cursor: pointer;  
+    left: 44%;
+    color: var(--blue-2);
+}
